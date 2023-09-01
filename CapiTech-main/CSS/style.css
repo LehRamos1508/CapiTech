@@ -1,0 +1,567 @@
+body {
+    font-family: 'Sora', sans-serif;
+}
+
+header {
+    background-color: var(--backgroundHomeColor);
+    color: #FFF;
+    padding-bottom: 12rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+nav button {
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#login div {
+    display: flex;
+    align-items: center;
+}
+
+#login img {
+    width: 26px;
+    margin-right: 8px;
+}
+
+.lineBetween {
+    margin: 0 4px;
+    font-size: 9px;
+}
+
+nav button img {
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 4rem auto 0 auto;
+    align-items: center;
+}
+
+#titulo img {
+    width: 130px;
+    padding: 0 5px;
+}
+
+h1 {
+    font-size: 5rem;
+    text-shadow: 0px 5px 10px #000;
+}
+
+header p {
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+aside {
+    position: absolute;
+    top: 0;
+    background-color: #1E1E1E;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 370px;
+    height: 280px;
+    border-radius: 0 0 10px 0;
+    display: none;
+    transition: all 0.2s ease-in-out;
+    z-index: 2;
+}
+
+aside button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 1rem;
+    top: 2.6rem;
+}
+
+aside a {
+    color: #FFF;
+    transition: all 0.2s ease-in;
+}
+
+aside a:hover {
+    color: var(--brownContainer);
+}
+
+aside ul li {
+    margin-top: 2rem;
+}
+
+#containersApresentacao {
+    position: relative;
+    display: flex;
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+    top: -7rem;
+    gap: 35px;
+}
+
+.container {
+    padding: 14px 0px;
+    border-radius: 15px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #FFF;
+    box-shadow: 0px 0px 7px 0px #000;
+}
+
+.container img{
+    width: 60%;
+}
+
+.container p {
+    color: #FFF;
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.container p + p {
+    font-weight: bolder;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.lightBlueContainer {
+    background-color: var(--lightBlueContainer);
+}
+
+.redContainer { 
+    background-color: var(--redContainer);
+}
+
+.purpleContainer { 
+    background-color: var(--purpleContainer);
+}
+
+.brownContainer { 
+    background-color: var(--brownContainer);
+}
+
+.intro {
+    width: 95%;
+    max-width: 800px;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro img {
+    width: 200px;
+}
+
+.intro h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+#contentContainers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    max-width: 900px;
+    width: 95%;
+    margin: 4rem auto 0 auto;
+    gap: 10px;
+}
+
+.contentInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #82b7f380;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 0px #000;
+    transition: all 0.1s ease-in;
+    cursor: default;
+}
+
+.contentInfo:hover {
+    box-shadow: 0px 0px 3px 1px #000;
+}
+
+.contentInfo img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.contentInfo p {
+    font-weight: bolder;
+    margin-top: 1.4rem;
+    text-align: center;
+}
+
+.contentInfo p + p {
+    font-weight: 400;
+    margin-top: 0.4rem;
+    padding: 0 18px;
+}
+
+#introducao a button {
+    background-color: var(--buttonBackground);
+    margin-top: 5rem;
+}
+
+.linkPagesButton{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 1px solid #000;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    justify-content: space-around;
+    transition: all 0.2s ease-in-out;
+}
+
+#introducao a button:hover {
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.55);
+}
+
+#centroPagina {
+    margin-top: 10rem;
+    background-color: var(--middlePageContainer);
+    padding: 3rem 0;
+}
+
+#centroPagina h2 {
+    color: #FFF;
+}
+
+.aboutWebContainer {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 700px;
+    margin: 7rem auto 0 auto;
+    justify-content: space-between;
+}
+
+.aboutWebContainer img {
+    width: 30%;
+    max-width: 120px;
+}
+
+.aboutWebContainer p {
+    width: 60%;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.aboutWebContainer + .aboutWebContainer {
+    flex-direction: row-reverse;
+}
+
+#centroPagina .linkPagesButton {
+    background-color: var(--brownContainer);
+    margin-top: 9rem;
+}
+
+#faculdade {
+    margin-top: 8rem;
+}
+
+#faculdade .intro div {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#faculdade h2 {
+    margin-top: 0;
+}
+
+#faculdade span {
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-left: 4px;
+    color: var(--redContainer);
+}
+
+#college {
+    width: 100%;
+    margin: auto;
+    max-width: 600px;
+}
+
+#aboutCollege {
+    padding: 24px 30px;
+    margin: 4rem auto;
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: 16px;
+    background-color: var(--redContainer);
+    color: #FFF;
+    text-align: justify;
+}
+
+#college div + p {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+#imagesCollege {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+}
+
+#imagesCollege img {
+    max-width: 100px;
+}
+
+#college button {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--redContainer);
+    color: #FFF;
+    border: none;
+    font-size: 16px;
+    padding: 17px;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    margin-top: 6rem;
+    flex-direction: column;
+    background-color: var(--backgroundHomeColor);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 1rem 0;
+}
+
+#footerLogo {
+    display: flex;
+    align-items: center;
+}
+
+#footerLogo img {
+    width: 40px;
+}
+
+#footerLogo span {
+    font-weight: bolder;
+    font-size: 16px;
+    color: #FFF;
+}
+
+footer a {
+    color: #FFF;
+    margin-top: 0.9rem;
+}
+footer div + a {
+    margin-top: 2rem;
+}
+
+footer a:visited {
+    color: #FFF;
+}
+
+footer img{
+    width: 10%;
+    min-width: 30px;
+}
+
+#modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #1e1e1e88;
+    top: 0;
+    display: none;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+}
+
+#modalLogin {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    max-width: 750px;
+    height: 85vh;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    color: #FFF;
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+
+#closeModal {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    background: none;
+    border: none;
+} 
+
+#icones {
+    display: flex;
+    flex-direction: column;
+    background-color: #838183;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+#icones img{
+    width: 50px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: #000;
+}
+
+#closeModal img {
+    background: #838383;
+}
+
+#icones div {
+    margin: 0.5rem 0 0 3.8rem;
+}
+
+#loginModal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginModal h3, #loginModal input, #loginModal button {
+    margin-top: 1.3rem;
+}
+
+#loginModal input {
+    padding: 15px 12px;
+    color: #FFF;
+    width: 350px;
+    border-radius: 20px;
+    border: none;
+    background-color: #000;
+}  
+
+#loginModal p {
+    margin-top: 1.5rem;
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
+#loginModal button {
+    background-color: var(--lightBlueContainer);
+}
+
+#loginModal button + button {
+    margin-top: 1.5rem;
+    background-color: var(--buttonBackground);
+}
+
+@media screen and (max-width: 540px) {
+    header {
+        padding-bottom: 9rem;
+    }
+    
+    #login div {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 18px !important;
+    }
+
+    #containersApresentacao {
+        justify-content: space-between;
+        gap: 0;
+        width: 98%;
+        top: -5rem;
+    }
+
+    .container {
+        width: 23%;
+    }
+
+    p {
+        font-size: 11px !important;
+    }
+
+    .container p + p {
+        font-size: 10px;
+    }
+
+    #contentContainers {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 300px;
+        gap: 32px 0;
+    }
+
+    #aboutCollege {
+        text-align: center;
+    }
+
+    
+}
+
+@media screen and (max-width: 350px) {
+
+    #titulo {
+        min-width: none;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    .container p + p {
+        font-size: 8px !important;
+    }
+
+
+}
+
+
+
